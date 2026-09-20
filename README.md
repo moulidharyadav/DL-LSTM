@@ -28,10 +28,6 @@ Train the model over multiple epochs, tracking loss.
 
 ## PROGRAM
 
-### Name: AHAMED JASEER SHA E
-
-### Register Number: 212224040015
-
 ```python
 
 
