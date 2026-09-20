@@ -15,8 +15,6 @@ STEP 4: Build a bidirectional LSTM model for sequence tagging.
 STEP 5: Train the model over multiple epochs, tracking loss.
 
 PROGRAM
-Name: AHAMED JASEER SHA E
-Register Number: 212224040015
 import pandas as pd
 import torch
 import torch.nn as nn
