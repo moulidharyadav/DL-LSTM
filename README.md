@@ -1,20 +1,40 @@
-DL- Developing a Deep Learning Model for NER using LSTM
-AIM
+# DL- Developing a Deep Learning Model for NER using LSTM
+
+## AIM
 To develop an LSTM-based model for recognizing the named entities in the text.
 
-Problem Statement and Dataset
-DESIGN STEPS
-STEP 1: Load data, create word/tag mappings, and group sentences.
+## Problem Statement and Dataset
 
-STEP 2: Convert sentences to index sequences, pad to fixed length, and split into training/testing sets.
 
-STEP 3: Define dataset and DataLoader for batching.
+## DESIGN STEPS
 
-STEP 4: Build a bidirectional LSTM model for sequence tagging.
+STEP 1:
+Load data, create word/tag mappings, and group sentences.
 
-STEP 5: Train the model over multiple epochs, tracking loss.
+STEP 2:
+Convert sentences to index sequences, pad to fixed length, and split into training/testing sets.
 
-PROGRAM
+STEP 3:
+Define dataset and DataLoader for batching.
+
+STEP 4:
+Build a bidirectional LSTM model for sequence tagging.
+
+STEP 5:
+Train the model over multiple epochs, tracking loss.
+
+
+
+
+## PROGRAM
+
+### Name: AHAMED JASEER SHA E
+
+### Register Number: 212224040015
+
+```python
+
+
 import pandas as pd
 import torch
 import torch.nn as nn
@@ -183,23 +203,19 @@ for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
         true_label = tags[true_tag.item()]
         pred_label = tags[pred_tag]
         print(f"{word:<15} {true_label:<10} {pred_label}")
-OUTPUT
-Loss Vs Epoch Plot
-image
-Sample Text Prediction
-image
-RESULT
+```
+
+### OUTPUT
+
+## Loss Vs Epoch Plot
+
+<img width="772" height="577" alt="image" src="https://github.com/user-attachments/assets/ae499c44-7d67-4d89-a3b3-7831ee223454" />
+
+
+### Sample Text Prediction
+<img width="468" height="545" alt="image" src="https://github.com/user-attachments/assets/56365c9e-ce2d-4c07-a3e2-4a3d5d30e723" />
+
+
+## RESULT
 Thus, an LSTM-based model for recognizing the named entities in the text has been developed successfully.
 
-About
-No description, website, or topics provided.
-Resources
-Readme
-License
-Activity
-Stars
-0 stars
-Watchers
-0 watching
-Forks
-0 forks
